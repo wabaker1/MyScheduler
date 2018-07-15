@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">MyScheduler</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+    <string name="title">Title</string>
+    <string name="start">Start</string>
+    <string name="reminder">Reminder</string>
+    <string name="repeat">Repeat</string>
+    <string name="description">Description</string>
+    <string name="enterValuePrompt">Enter A Value</string>
+    <string name="selectDatePrompt">Select A Date</string>
+    <string name="selectTimePrompt">Select A Time</string>
+    <string-array name="daysToRepeat">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+
+
+    <string name="savetask">Save</string>
+    <string name="cancelcreate">Cancel</string>
+    <string name="infopage">Information</string>
+    <string name="information">You can create tasks from the task page using the "+" icon in the
+        bottom left of the tasks page or the "add task" button on the calendar page.
+        Reminder will send you a notification at time of task.
+        To edit a task you can click on a task in the view then press edit.
+        Deleting is done the same way. The calendar page shows the first date of every task.
+        Pressing "clear" button will clear all tasks for a particular day. There is a widget! It
+        shows time until a task comes to pass!</string>
+    <string name="ok_label">OK</string>
+    <string name="repeat_days_title">Select Days to repeat task</string>
+    <string name="appwidget_text">Scheduler</string>
+    <string name="widgetConfigure">Select Task to Track</string>
+    <string name="add_widget">Add widget</string>
+</resources>

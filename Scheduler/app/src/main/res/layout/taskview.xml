@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="14dp"
+        android:clickable="true"
+        android:focusable="auto"
+        android:onClick="onAddTaskPressed"
+        android:tint="@android:color/background_light"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <Button
+        android:id="@+id/deleteLB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="54dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:onClick="onDeletePress"
+        android:text="Delete" />
+
+    <Button
+        android:id="@+id/editLB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="31dp"
+        android:layout_toStartOf="@+id/fab"
+        android:backgroundTint="@color/colorPrimary"
+        android:onClick="onEditPress"
+        android:text="Edit" />
+
+    <ListView
+        android:id="@+id/taskViewList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/deleteLB"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:choiceMode="singleChoice" />
+
+</RelativeLayout>

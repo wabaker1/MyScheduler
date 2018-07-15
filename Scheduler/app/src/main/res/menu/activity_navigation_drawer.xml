@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_tasksViewLayout"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Tasks" />
+        <item
+            android:id="@+id/nav_calendarLayout"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Calendar" />
+        <item
+            android:id="@+id/nav_informationLayout"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Information" />
+    </group>
+
+</menu>

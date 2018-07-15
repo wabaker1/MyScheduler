@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="68dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:onClick="onCancelPressed"
+                android:text="@string/cancelcreate" />
+
+            <Button
+                android:id="@+id/saveTaskBL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/scrollView"
+                android:layout_marginStart="66dp"
+                android:layout_marginTop="47dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:keyboardNavigationCluster="false"
+                android:onClick="onSaveTaskPressed"
+                android:text="@string/savetask" />
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/editText4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/timeSelectionTB"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="@string/reminder"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/editText5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/taskRemindToggle"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="@string/repeat"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/taskDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/editText6"
+                        android:layout_centerHorizontal="true"
+                        android:ems="10"
+                        android:inputType="textMultiLine" />
+
+                    <TextView
+                        android:id="@+id/editText2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/taskTitleTV"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="@string/start"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/dateSelectionTB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/editText2"
+                        android:layout_centerHorizontal="true"
+                        android:onClick="onSelectDate"
+                        android:paddingBottom="@dimen/activity_vertical_margin"
+                        android:paddingTop="@dimen/activity_vertical_margin"
+                        android:text="@string/selectDatePrompt"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/editText6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/repeatBL"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="@string/description"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/editText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="@string/title"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/taskTitleTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/editText"
+                        android:layout_centerHorizontal="true"
+                        android:clickable="true"
+                        android:text="@string/enterValuePrompt" />
+
+                    <Switch
+                        android:id="@+id/taskRemindToggle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/editText4"
+                        android:layout_centerHorizontal="true"
+                        android:paddingBottom="@dimen/activity_vertical_margin"
+                        android:paddingTop="@dimen/activity_vertical_margin"
+                        android:text="Send a Notification?"
+                        android:textSize="18sp" />
+
+                    <ImageButton
+                        android:id="@+id/dateSelectL"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/dateSelectionTB"
+                        android:layout_alignTop="@+id/dateSelectionTB"
+                        android:layout_marginStart="15dp"
+                        android:layout_toEndOf="@+id/dateSelectionTB"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:onClick="onSelectDate"
+                        app:srcCompat="@android:drawable/ic_menu_today" />
+
+                    <TextView
+                        android:id="@+id/timeSelectionTB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/dateSelectionTB"
+                        android:layout_centerHorizontal="true"
+                        android:inputType="none"
+                        android:onClick="onSelectTime"
+                        android:paddingBottom="@dimen/activity_vertical_margin"
+                        android:paddingTop="@dimen/activity_vertical_margin"
+                        android:text="@string/selectTimePrompt"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <ImageButton
+                        android:id="@+id/selectTimeL"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/dateSelectL"
+                        android:layout_alignTop="@+id/timeSelectionTB"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:onClick="onSelectTime"
+                        app:srcCompat="@android:drawable/ic_menu_recent_history" />
+
+                    <Button
+                        android:id="@+id/repeatBL"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/editText5"
+                        android:layout_centerHorizontal="true"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:onClick="onSelectRepeat"
+                        android:text="Repeat" />
+
+                </RelativeLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
